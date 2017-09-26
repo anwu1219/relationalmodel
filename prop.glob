@@ -1,0 +1,33 @@
+DIGEST 912d42a60a1276f7ecf5768d92515e1e
+FRelationAlgebra.prop
+R578:584 RelationAlgebra.lattice <> <> lib
+def 0:-1 <> Prop_lattice_ops
+R653:663 RelationAlgebra.lattice <> ops class
+R673:769 RelationAlgebra.lattice <> mk_ops constr
+R766:769 Coq.Init.Logic <> True ind
+R750:754 Coq.Init.Logic <> False ind
+R736:738 Coq.Init.Logic <> not def
+R722:724 Coq.Init.Logic <> and ind
+R709:710 Coq.Init.Logic <> or ind
+R695:697 Coq.Init.Logic <> iff def
+R680:683 RelationAlgebra.common <> impl syndef
+inst 892:908 <> Prop_lattice_laws
+R911:922 RelationAlgebra.lattice <> laws class
+R942:957 RelationAlgebra.prop <> Prop_lattice_ops canonstruc
+R936:936 RelationAlgebra.level <> :level_scope:x_'+'_x not
+R932:932 RelationAlgebra.level <> :level_scope:x_'+'_x not
+R928:928 RelationAlgebra.level <> :level_scope:x_'+'_x not
+R925:927 RelationAlgebra.level <> BDL def
+R929:931 RelationAlgebra.level <> STR def
+R933:935 RelationAlgebra.level <> CNV def
+R937:939 RelationAlgebra.level <> DIV def
+R993:1006 Coq.Classes.RelationClasses <> Build_PreOrder constr
+R993:1006 Coq.Classes.RelationClasses <> Build_PreOrder constr
+R993:1006 Coq.Classes.RelationClasses <> Build_PreOrder constr
+R993:1006 Coq.Classes.RelationClasses <> Build_PreOrder constr
+R993:1006 Coq.Classes.RelationClasses <> Build_PreOrder constr
+R993:1006 Coq.Classes.RelationClasses <> Build_PreOrder constr
+R993:1006 Coq.Classes.RelationClasses <> Build_PreOrder constr
+R993:1006 Coq.Classes.RelationClasses <> Build_PreOrder constr
+R993:1006 Coq.Classes.RelationClasses <> Build_PreOrder constr
+R993:1006 Coq.Classes.RelationClasses <> Build_PreOrder constr

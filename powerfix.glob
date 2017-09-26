@@ -1,0 +1,170 @@
+DIGEST b0bd04445689cbc2421b5b3efcdad09b
+FRelationAlgebra.powerfix
+R984:989 RelationAlgebra.common <> <> lib
+sec 1025:1032 <> powerfix
+var 1046:1046 powerfix A
+var 1048:1048 powerfix B
+syndef 1066:1068 <> Fun
+R1075:1078 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R1079:1079 RelationAlgebra.powerfix <> powerfix.B var
+R1074:1074 RelationAlgebra.powerfix <> powerfix.A var
+def 1479:1487 <> powerfix'
+R1498:1501 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R1502:1504 RelationAlgebra.powerfix <> Fun syndef
+R1495:1497 RelationAlgebra.powerfix <> Fun syndef
+R1511:1513 RelationAlgebra.powerfix <> Fun syndef
+R1517:1519 RelationAlgebra.powerfix <> Fun syndef
+R1542:1542 RelationAlgebra.powerfix <> n var
+R1549:1549 Coq.Init.Datatypes <> O constr
+R1554:1554 RelationAlgebra.powerfix <> k var
+R1556:1556 RelationAlgebra.powerfix <> a var
+R1560:1560 Coq.Init.Datatypes <> S constr
+R1567:1567 RelationAlgebra.powerfix <> f var
+R1603:1603 RelationAlgebra.powerfix <> a var
+R1570:1578 RelationAlgebra.powerfix <> powerfix' def
+R1585:1593 RelationAlgebra.powerfix <> powerfix' def
+R1599:1599 RelationAlgebra.powerfix <> k var
+R1597:1597 RelationAlgebra.powerfix <> f var
+R1595:1595 RelationAlgebra.powerfix <> n var
+R1582:1582 RelationAlgebra.powerfix <> f var
+R1580:1580 RelationAlgebra.powerfix <> n var
+def 1621:1628 <> powerfix
+R1641:1641 RelationAlgebra.powerfix <> f var
+R1661:1661 RelationAlgebra.powerfix <> a var
+R1644:1652 RelationAlgebra.powerfix <> powerfix' def
+R1658:1658 RelationAlgebra.powerfix <> k var
+R1656:1656 RelationAlgebra.powerfix <> f var
+R1654:1654 RelationAlgebra.powerfix <> n var
+def 1674:1682 <> linearfix
+R1693:1696 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R1697:1699 RelationAlgebra.powerfix <> Fun syndef
+R1690:1692 RelationAlgebra.powerfix <> Fun syndef
+R1706:1708 RelationAlgebra.powerfix <> Fun syndef
+R1712:1714 RelationAlgebra.powerfix <> Fun syndef
+R1736:1736 RelationAlgebra.powerfix <> n var
+R1743:1743 Coq.Init.Datatypes <> O constr
+R1748:1748 RelationAlgebra.powerfix <> k var
+R1750:1750 RelationAlgebra.powerfix <> a var
+R1754:1754 Coq.Init.Datatypes <> S constr
+R1761:1761 RelationAlgebra.powerfix <> f var
+R1781:1781 RelationAlgebra.powerfix <> a var
+R1764:1772 RelationAlgebra.powerfix <> linearfix def
+R1778:1778 RelationAlgebra.powerfix <> k var
+R1776:1776 RelationAlgebra.powerfix <> f var
+R1774:1774 RelationAlgebra.powerfix <> n var
+prf 1829:1834 <> pow2_S
+R1845:1847 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1839:1842 RelationAlgebra.common <> pow2 def
+R1844:1844 RelationAlgebra.powerfix <> n var
+R1848:1848 Coq.Init.Datatypes <> S constr
+R1851:1854 Coq.Init.Peano <> pred syndef
+R1857:1860 RelationAlgebra.common <> pow2 def
+R1862:1862 RelationAlgebra.powerfix <> n var
+prf 1936:1947 <> pred_pow2_Sn
+R1969:1971 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1952:1955 Coq.Init.Peano <> pred syndef
+R1958:1961 RelationAlgebra.common <> pow2 def
+R1964:1964 Coq.Init.Datatypes <> S constr
+R1966:1966 RelationAlgebra.powerfix <> n var
+R1972:1972 Coq.Init.Datatypes <> S constr
+R1975:1980 RelationAlgebra.common <> double def
+R1983:1986 Coq.Init.Peano <> pred syndef
+R1989:1992 RelationAlgebra.common <> pow2 def
+R1994:1994 RelationAlgebra.powerfix <> n var
+R2026:2031 RelationAlgebra.powerfix <> pow2_S thm
+R2026:2031 RelationAlgebra.powerfix <> pow2_S thm
+R2026:2031 RelationAlgebra.powerfix <> pow2_S thm
+sec 2103:2114 powerfix linear_carac
+var 2128:2128 powerfix.linear_carac f
+R2134:2137 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R2138:2140 RelationAlgebra.powerfix <> Fun syndef
+R2131:2133 RelationAlgebra.powerfix <> Fun syndef
+prf 2151:2161 <> linearfix_S
+R2199:2201 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2180:2180 RelationAlgebra.powerfix <> powerfix.linear_carac.f var
+R2183:2191 RelationAlgebra.powerfix <> linearfix def
+R2197:2197 RelationAlgebra.powerfix <> k var
+R2195:2195 RelationAlgebra.powerfix <> powerfix.linear_carac.f var
+R2193:2193 RelationAlgebra.powerfix <> n var
+R2202:2210 RelationAlgebra.powerfix <> linearfix def
+R2217:2217 RelationAlgebra.powerfix <> powerfix.linear_carac.f var
+R2219:2219 RelationAlgebra.powerfix <> k var
+R2214:2214 RelationAlgebra.powerfix <> powerfix.linear_carac.f var
+R2212:2212 RelationAlgebra.powerfix <> n var
+prf 2304:2319 <> linearfix_double
+R2369:2371 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2338:2346 RelationAlgebra.powerfix <> linearfix def
+R2353:2361 RelationAlgebra.powerfix <> linearfix def
+R2367:2367 RelationAlgebra.powerfix <> k var
+R2365:2365 RelationAlgebra.powerfix <> powerfix.linear_carac.f var
+R2363:2363 RelationAlgebra.powerfix <> n var
+R2350:2350 RelationAlgebra.powerfix <> powerfix.linear_carac.f var
+R2348:2348 RelationAlgebra.powerfix <> n var
+R2372:2380 RelationAlgebra.powerfix <> linearfix def
+R2395:2395 RelationAlgebra.powerfix <> k var
+R2393:2393 RelationAlgebra.powerfix <> powerfix.linear_carac.f var
+R2383:2388 RelationAlgebra.common <> double def
+R2390:2390 RelationAlgebra.powerfix <> n var
+R2487:2497 RelationAlgebra.powerfix <> linearfix_S thm
+R2487:2497 RelationAlgebra.powerfix <> linearfix_S thm
+R2487:2497 RelationAlgebra.powerfix <> linearfix_S thm
+prf 2515:2533 <> powerfix'_linearfix
+R2567:2569 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2552:2560 RelationAlgebra.powerfix <> powerfix' def
+R2566:2566 RelationAlgebra.powerfix <> k var
+R2564:2564 RelationAlgebra.powerfix <> powerfix.linear_carac.f var
+R2562:2562 RelationAlgebra.powerfix <> n var
+R2570:2578 RelationAlgebra.powerfix <> linearfix def
+R2598:2598 RelationAlgebra.powerfix <> k var
+R2596:2596 RelationAlgebra.powerfix <> powerfix.linear_carac.f var
+R2581:2584 Coq.Init.Peano <> pred syndef
+R2587:2590 RelationAlgebra.common <> pow2 def
+R2592:2592 RelationAlgebra.powerfix <> n var
+R2657:2668 RelationAlgebra.powerfix <> pred_pow2_Sn thm
+R2657:2668 RelationAlgebra.powerfix <> pred_pow2_Sn thm
+R2657:2668 RelationAlgebra.powerfix <> pred_pow2_Sn thm
+R2696:2711 RelationAlgebra.powerfix <> linearfix_double thm
+R2696:2711 RelationAlgebra.powerfix <> linearfix_double thm
+R2696:2711 RelationAlgebra.powerfix <> linearfix_double thm
+prf 2736:2753 <> powerfix_linearfix
+R2786:2788 Coq.Init.Logic <> :type_scope:x_'='_x not
+R2772:2779 RelationAlgebra.powerfix <> powerfix def
+R2785:2785 RelationAlgebra.powerfix <> k var
+R2783:2783 RelationAlgebra.powerfix <> powerfix.linear_carac.f var
+R2781:2781 RelationAlgebra.powerfix <> n var
+R2789:2797 RelationAlgebra.powerfix <> linearfix def
+R2810:2810 RelationAlgebra.powerfix <> k var
+R2808:2808 RelationAlgebra.powerfix <> powerfix.linear_carac.f var
+R2800:2803 RelationAlgebra.common <> pow2 def
+R2805:2805 RelationAlgebra.powerfix <> n var
+R2836:2843 RelationAlgebra.powerfix <> powerfix def
+R2858:2876 RelationAlgebra.powerfix <> powerfix'_linearfix thm
+R2879:2884 RelationAlgebra.powerfix <> pow2_S thm
+R2858:2876 RelationAlgebra.powerfix <> powerfix'_linearfix thm
+R2858:2876 RelationAlgebra.powerfix <> powerfix'_linearfix thm
+R2879:2884 RelationAlgebra.powerfix <> pow2_S thm
+R2879:2884 RelationAlgebra.powerfix <> pow2_S thm
+R2897:2908 RelationAlgebra.powerfix powerfix.linear_carac <> sec
+sec 3235:3243 powerfix invariant
+var 3256:3256 powerfix.invariant P
+R3262:3265 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R3259:3261 RelationAlgebra.powerfix <> Fun syndef
+prf 3280:3297 <> powerfix_invariant
+R3318:3318 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R3343:3347 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R3351:3354 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R3355:3355 RelationAlgebra.powerfix <> powerfix.invariant.P var
+R3358:3365 RelationAlgebra.powerfix <> powerfix def
+R3371:3371 RelationAlgebra.powerfix <> g var
+R3369:3369 RelationAlgebra.powerfix <> f var
+R3367:3367 RelationAlgebra.powerfix <> n var
+R3348:3348 RelationAlgebra.powerfix <> powerfix.invariant.P var
+R3350:3350 RelationAlgebra.powerfix <> g var
+R3332:3335 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R3336:3336 RelationAlgebra.powerfix <> powerfix.invariant.P var
+R3339:3339 RelationAlgebra.powerfix <> f var
+R3341:3341 RelationAlgebra.powerfix <> k var
+R3329:3329 RelationAlgebra.powerfix <> powerfix.invariant.P var
+R3331:3331 RelationAlgebra.powerfix <> k var
+R3485:3493 RelationAlgebra.powerfix powerfix.invariant <> sec
+R3501:3508 RelationAlgebra.powerfix powerfix <> sec
