@@ -1,2 +1,0 @@
-kat_completeness.vo kat_completeness.glob kat_completeness.v.beautified: kat_completeness.v ./denum.vo ./lset.vo ./sums.vo ./normalisation.vo ./kat.vo ./ka_completeness.vo ./untyping.vo ./regex.vo ./gregex.vo ./lsyntax.vo ./syntax.vo ./lang.vo ./glang.vo ./boolean.vo ./atoms.vo
-kat_completeness.vio: kat_completeness.v ./denum.vio ./lset.vio ./sums.vio ./normalisation.vio ./kat.vio ./ka_completeness.vio ./untyping.vio ./regex.vio ./gregex.vio ./lsyntax.vio ./syntax.vio ./lang.vio ./glang.vio ./boolean.vio ./atoms.vio
