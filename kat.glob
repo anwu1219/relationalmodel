@@ -1,0 +1,176 @@
+DIGEST b1cbb371a10e9082911bf5441fef00e4
+FRelationAlgebra.kat
+R637:658 RelationAlgebra.kleene <> <> lib
+constr 1125:1130 <> mk_ops
+rec 1118:1120 <> ops
+proj 1136:1138 <> kar
+proj 1155:1157 <> tst
+proj 1185:1187 <> inj
+R1141:1150 RelationAlgebra.monoid <> ops class
+R1166:1169 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R1170:1180 RelationAlgebra.lattice <> ops class
+R1160:1161 RelationAlgebra.monoid <> ob meth
+R1163:1165 RelationAlgebra.kat <> kar meth
+R1207:1210 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R1211:1213 RelationAlgebra.kat <> kar meth
+R1217:1217 RelationAlgebra.kat <> n var
+R1215:1215 RelationAlgebra.kat <> n var
+R1202:1204 RelationAlgebra.kat <> tst meth
+R1206:1206 RelationAlgebra.kat <> n var
+R1231:1233 RelationAlgebra.kat <> kar meth
+R1363:1365 RelationAlgebra.kat <> inj meth
+not 1349:1349 <> :ra_terms:'['_x_']'
+rec 2399:2402 <> laws
+proj 2420:2426 <> kar_BKA
+proj 2453:2458 <> tst_BL
+proj 2499:2505 <> mor_inj
+proj 2545:2551 <> inj_top
+proj 2582:2588 <> inj_cap
+R2408:2410 RelationAlgebra.kat <> ops class
+R2430:2440 RelationAlgebra.monoid <> laws class
+R2446:2448 RelationAlgebra.kat <> kar meth
+R2442:2444 RelationAlgebra.level <> BKA def
+R2472:2483 RelationAlgebra.lattice <> laws class
+R2489:2491 RelationAlgebra.kat <> tst meth
+R2493:2493 RelationAlgebra.kat <> n var
+R2485:2486 RelationAlgebra.level <> BL def
+R2518:2525 RelationAlgebra.lattice <> morphism class
+R2533:2535 RelationAlgebra.kat <> inj meth
+R2539:2539 RelationAlgebra.kat <> n var
+R2537:2537 RelationAlgebra.kat <> X var
+R2527:2529 RelationAlgebra.level <> BSL def
+R2569:2572 RelationAlgebra.lattice <> :ra_scope:x_'=='_x not
+R2564:2564 RelationAlgebra.kat <> :ra_terms:'['_x_']' not
+R2568:2568 RelationAlgebra.kat <> :ra_terms:'['_x_']' not
+R2565:2567 RelationAlgebra.lattice <> top meth
+R2573:2575 RelationAlgebra.monoid <> one meth
+R2577:2577 RelationAlgebra.kat <> n var
+R2606:2608 RelationAlgebra.kat <> tst meth
+R2610:2610 RelationAlgebra.kat <> n var
+R2624:2627 RelationAlgebra.lattice <> :ra_scope:x_'=='_x not
+R2614:2614 RelationAlgebra.kat <> :ra_terms:'['_x_']' not
+R2623:2623 RelationAlgebra.kat <> :ra_terms:'['_x_']' not
+R2616:2621 RelationAlgebra.lattice <> :ra_terms:x_'\cap'_x not
+R2615:2615 RelationAlgebra.kat <> p var
+R2622:2622 RelationAlgebra.kat <> q var
+R2631:2633 RelationAlgebra.monoid <> :ra_terms:x_'*'_x not
+R2628:2628 RelationAlgebra.kat <> :ra_terms:'['_x_']' not
+R2630:2630 RelationAlgebra.kat <> :ra_terms:'['_x_']' not
+R2629:2629 RelationAlgebra.kat <> p var
+R2634:2634 RelationAlgebra.kat <> :ra_terms:'['_x_']' not
+R2636:2636 RelationAlgebra.kat <> :ra_terms:'['_x_']' not
+R2635:2635 RelationAlgebra.kat <> q var
+sec 2686:2686 <> s
+R2702:2705 RelationAlgebra.kat <> laws class
+var 2718:2718 s n
+R2721:2722 RelationAlgebra.monoid <> ob meth
+R2724:2724 RelationAlgebra.kat <> s.X var
+inst 2745:2751 <> inj_leq
+R2754:2759 Coq.Classes.Morphisms <> Proper class
+R2777:2779 RelationAlgebra.kat <> inj meth
+R2783:2783 RelationAlgebra.kat <> s.n var
+R2781:2781 RelationAlgebra.kat <> s.X var
+R2765:2769 Coq.Classes.Morphisms ProperNotations :signature_scope:x_'==>'_x not
+R2762:2764 RelationAlgebra.lattice <> leq meth
+R2770:2772 RelationAlgebra.lattice <> leq meth
+R2800:2806 RelationAlgebra.kat <> mor_inj meth
+R2800:2806 RelationAlgebra.kat <> mor_inj meth
+inst 2831:2837 <> inj_weq
+R2840:2845 Coq.Classes.Morphisms <> Proper class
+R2863:2865 RelationAlgebra.kat <> inj meth
+R2869:2869 RelationAlgebra.kat <> s.n var
+R2867:2867 RelationAlgebra.kat <> s.X var
+R2851:2855 Coq.Classes.Morphisms ProperNotations :signature_scope:x_'==>'_x not
+R2848:2850 RelationAlgebra.lattice <> weq meth
+R2856:2858 RelationAlgebra.lattice <> weq meth
+R2886:2892 RelationAlgebra.kat <> mor_inj meth
+R2886:2892 RelationAlgebra.kat <> mor_inj meth
+prf 2907:2913 <> inj_bot
+R2921:2924 RelationAlgebra.lattice <> :ra_scope:x_'=='_x not
+R2916:2916 RelationAlgebra.kat <> :ra_terms:'['_x_']' not
+R2920:2920 RelationAlgebra.kat <> :ra_terms:'['_x_']' not
+R2917:2919 RelationAlgebra.lattice <> bot meth
+R2925:2927 RelationAlgebra.monoid <> zer syndef
+R2929:2929 RelationAlgebra.kat <> s.n var
+R2931:2931 RelationAlgebra.kat <> s.n var
+R2951:2957 RelationAlgebra.kat <> mor_inj meth
+R2951:2957 RelationAlgebra.kat <> mor_inj meth
+prf 2972:2978 <> inj_cup
+R2986:2988 RelationAlgebra.kat <> tst meth
+R2990:2990 RelationAlgebra.kat <> s.n var
+R3004:3007 RelationAlgebra.lattice <> :ra_scope:x_'=='_x not
+R2994:2994 RelationAlgebra.kat <> :ra_terms:'['_x_']' not
+R3003:3003 RelationAlgebra.kat <> :ra_terms:'['_x_']' not
+R2996:3001 RelationAlgebra.lattice <> :ra_terms:x_'\cup'_x not
+R2995:2995 RelationAlgebra.kat <> p var
+R3002:3002 RelationAlgebra.kat <> q var
+R3011:3013 RelationAlgebra.monoid <> :ra_terms:x_'+'_x not
+R3008:3008 RelationAlgebra.kat <> :ra_terms:'['_x_']' not
+R3010:3010 RelationAlgebra.kat <> :ra_terms:'['_x_']' not
+R3009:3009 RelationAlgebra.kat <> p var
+R3014:3014 RelationAlgebra.kat <> :ra_terms:'['_x_']' not
+R3016:3016 RelationAlgebra.kat <> :ra_terms:'['_x_']' not
+R3015:3015 RelationAlgebra.kat <> q var
+R3036:3042 RelationAlgebra.kat <> mor_inj meth
+R3036:3042 RelationAlgebra.kat <> mor_inj meth
+prf 3057:3063 <> str_inj
+R3069:3071 RelationAlgebra.kat <> tst meth
+R3073:3073 RelationAlgebra.kat <> s.n var
+R3082:3085 RelationAlgebra.lattice <> :ra_scope:x_'=='_x not
+R3080:3081 RelationAlgebra.monoid <> :ra_terms:x_'^*' not
+R3077:3077 RelationAlgebra.kat <> :ra_terms:'['_x_']' not
+R3079:3079 RelationAlgebra.kat <> :ra_terms:'['_x_']' not
+R3078:3078 RelationAlgebra.kat <> p var
+R3102:3108 RelationAlgebra.lattice <> antisym thm
+R3102:3108 RelationAlgebra.lattice <> antisym thm
+R3123:3128 RelationAlgebra.lattice <> leq_xt thm
+R3131:3137 RelationAlgebra.kat <> inj_top meth
+R3140:3143 RelationAlgebra.kleene <> str1 thm
+R3123:3128 RelationAlgebra.lattice <> leq_xt thm
+R3123:3128 RelationAlgebra.lattice <> leq_xt thm
+R3131:3137 RelationAlgebra.kat <> inj_top meth
+R3131:3137 RelationAlgebra.kat <> inj_top meth
+R3140:3143 RelationAlgebra.kleene <> str1 thm
+R3140:3143 RelationAlgebra.kleene <> str1 thm
+R3152:3159 RelationAlgebra.monoid <> str_refl meth
+R3152:3159 RelationAlgebra.monoid <> str_refl meth
+R3172:3172 RelationAlgebra.kat s <> sec
+def 3230:3233 <> dual
+R3239:3241 RelationAlgebra.kat <> ops class
+R3252:3297 RelationAlgebra.kat <> mk_ops constr
+R3293:3295 RelationAlgebra.kat <> inj meth
+R3297:3297 RelationAlgebra.kat <> X var
+R3278:3280 RelationAlgebra.kat <> tst meth
+R3259:3262 RelationAlgebra.monoid <> dual def
+R3264:3266 RelationAlgebra.kat <> kar meth
+prf 3311:3319 <> dual_laws
+R3327:3330 RelationAlgebra.kat <> laws class
+R3332:3332 RelationAlgebra.kat <> X var
+R3336:3339 RelationAlgebra.kat <> laws class
+R3342:3345 RelationAlgebra.kat <> dual def
+R3347:3347 RelationAlgebra.kat <> X var
+R3394:3402 RelationAlgebra.monoid <> dual_laws thm
+R3405:3411 RelationAlgebra.kat <> kar_BKA meth
+R3394:3402 RelationAlgebra.monoid <> dual_laws thm
+R3405:3411 RelationAlgebra.kat <> kar_BKA meth
+R3448:3451 RelationAlgebra.lattice <> capC thm
+R3448:3451 RelationAlgebra.lattice <> capC thm
+R3448:3451 RelationAlgebra.lattice <> capC thm
+R3460:3466 RelationAlgebra.kat <> inj_cap meth
+R3460:3466 RelationAlgebra.kat <> inj_cap meth
+prf 3482:3488 <> dualize
+R3497:3500 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R3494:3496 RelationAlgebra.kat <> ops class
+R3527:3530 Coq.Init.Logic <> :type_scope:x_'->'_x not
+R3531:3531 RelationAlgebra.kat <> P var
+R3533:3533 RelationAlgebra.kat <> X var
+R3521:3524 RelationAlgebra.kat <> laws class
+R3526:3526 RelationAlgebra.kat <> X var
+R3544:3547 RelationAlgebra.kat <> laws class
+R3549:3549 RelationAlgebra.kat <> X var
+R3553:3553 RelationAlgebra.kat <> P var
+R3556:3559 RelationAlgebra.kat <> dual def
+R3561:3561 RelationAlgebra.kat <> X var
+R3592:3600 RelationAlgebra.kat <> dual_laws thm
+R3592:3600 RelationAlgebra.kat <> dual_laws thm
+R3631:3637 RelationAlgebra.kat <> dualize thm

@@ -3,53 +3,55 @@ From RelationAlgebra Require Import kat normalisation rewriting kat_tac rel.
 Set Implicit Arguments.
 
 
-Canonical Structure bool_algebra: lattice.ops := {|
-  car := (nat -> Prop);
+Canonical Structure bool_algebra (A: Type): lattice.ops := {|
+  car := (A -> Prop);
   leq := set_subset;
   weq := set_equiv;
-  cup := fun s s' => set_union s s';
-  cap := fun s s' => set_inter s s';
+  cup := set_union (A:=A);
+  cap := @set_inter _;
   bot := set_empty;
   top := set_full;
-  neg := fun s => set_compl s;
+  neg := @set_compl _;
 |}.
 
 
-Canonical Structure partial_order: lattice.ops := {|
-  car := relation nat;
+Canonical Structure partial_order (A: Type): lattice.ops := {|
+  car := relation A;
   leq := inclusion;
   weq := same_relation;
-  cup := fun r r' => union r r';
-  cap := fun r r' => inter_rel r r';
+  cup := @union _;
+  cap := @inter_rel _;
   bot := ∅₂;
   top := fun _ _ => True;
   neg := fun r => (fun _ _ => True) \ r 
 |}.
 
+Definition ld := 
+fun A (R R' : relation A) y z => exists x, R x y /\ R' x z.
+
+Definition rd := 
+fun A (R R' : relation A) x y => exists z, R y z /\ R' x z.
 
  
-Canonical Structure kleene_algebra: monoid.ops := {|
-  ob := relation nat;
-  mor n m := partial_order;
-  dot n m p := fun r r' => seq r r';
-  one n := fun x y => x = y;
-  itr n := fun r => clos_trans r;
-  str n := fun r => clos_refl_trans r;
-  cnv n m := fun r => transp r;
-  ldv n m p := fun x y => ld x y;
-  rdv n m p := fun x y => rd x y
+Canonical Structure kleene_algebra A: monoid.ops := {|
+  ob := relation A;
+  mor n m := partial_order A;
+  dot n m p := @seq A;
+  one n := <| fun _ : A => True |>(*fun x y => x = y*);
+  itr n := @clos_trans _;
+  str n := @clos_refl_trans _;
+  cnv n m := @transp _;
+  ldv n m p := @ld _;
+  rdv n m p := @rd _
 |}.
 
 
-Canonical Structure kleene_algebra_with_test: kat.ops := {|
-  kar := kleene_algebra;
-  tst n := bool_algebra;
-  inj n := fun x => eqv_rel x
+Canonical Structure kleene_algebra_with_test A: kat.ops := {|
+  kar := kleene_algebra A;
+  tst n := bool_algebra A;
+  inj n := @eqv_rel A
 |}.
 
-
-Notation prog' := (kleene_algebra_with_test tt tt).
-Notation test := (@tst kleene_algebra_with_test tt).
 
 Local Ltac u :=
   unfold set_union, set_inter, set_minus, set_compl,
@@ -59,33 +61,49 @@ Local Ltac u :=
 
 
 (* Boolean algebra is a lattice *)
-Instance expr_lattice_laws: lattice.laws BL bool_algebra.
+Instance expr_lattice_laws A: lattice.laws BL (bool_algebra A).
 Proof.
   constructor; try eauto; ins; u.
 Qed.
 
-(* Kleene algebra is a monoid *)
-Instance prog_monoid_laws: monoid.laws BKA kleene_algebra. 
+Instance prog_lattice_laws A: lattice.laws BKA (partial_order A).
 Proof.
-  constructor; try ins; eauto.
-  - admit.
-  - 
-  
+  constructor; try eauto; ins; u.
+Qed. 
+
+(* Kleene algebra is a monoid *)
+Instance prog_monoid_laws A: monoid.laws BKA (kleene_algebra A). 
+Proof.
+  constructor; try ins; eauto; u. 
+  all: rels.
+  - by right; ins; apply seq_id_r.
+  - unfold seq, inclusion in *; ins; desf.
+    induction H1; eauto.
+  - right; right; ins.
+    unfold seq, inclusion in *; ins; desf.
+    induction H2; eauto.
 Qed.
 
 
-Instance prog_kat_laws: kat.laws kleene_algebra_with_test.
+Instance prog_kat_laws A: kat.laws (kleene_algebra_with_test A).
 Proof.
   constructor; simpl; eauto with typeclass_instances. 
-  - admit.
-  - admit.
-  - admit.
-  - admit.
-  - admit. 
+  split; ins.
+  by rewrite H. 
+  by rewrite H.
+  by rewrite id_union.
+  by unfold eqv_rel; split; red; ins; desf.
+  by unfold set_inter, eqv_rel, seq, same_relation, inclusion; split; ins; desf; eauto.
 Qed.
 
 
 
+Notation ra_relation A := (kleene_algebra_with_test A).
 
-Lemma r_seq_in_r_trans_clos (r: relation nat): (r ⨾  r) ⊆ r ⁺.
+Lemma r_seq_in_r_trans_clos A x (r: ra_relation A x x): (r * r) <== r ^+.
 Proof. 
+kat.
+Qed.
+
+
+ 
