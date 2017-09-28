@@ -1,2 +1,0 @@
-kat_reification.vo kat_reification.glob kat_reification.v.beautified: kat_reification.v ./lsyntax.vo ./ordinal.vo ./lset.vo ./positives.vo ./kat.vo ./gregex.vo ./syntax.vo ra_common.cmo ra_common.cmxs kat_reification.cma kat_reification.cmxs
-kat_reification.vio: kat_reification.v ./lsyntax.vio ./ordinal.vio ./lset.vio ./positives.vio ./kat.vio ./gregex.vio ./syntax.vio ra_common.cmo ra_common.cmxs kat_reification.cma kat_reification.cmxs
