@@ -102,9 +102,7 @@ Proof.
 Qed.
 
 
-Notation ra_nat_relation := (kleene_algebra_with_test nat).
-
-Lemma r_seq_in_r_trans_clos x (r: ra_nat_relation x x): (r * r) <== r ^+.
+Lemma r_seq_in_r_trans_clos A x (r: kleene_algebra_with_test A x x): (r * r) <== r ^+.
 Proof. 
 kat.
 Qed.
