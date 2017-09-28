@@ -26,12 +26,17 @@ Canonical Structure partial_order (A: Type): lattice.ops := {|
   neg := fun r => (fun _ _ => True) \ r 
 |}.
 
-Definition ld := 
-fun A (R R' : relation A) y z => exists x, R x y /\ R' x z.
+(* 
+Left and right division are defined such that
+  left_div: R <= P // Q iff R ; Q <= P 
+  right_div: R <= P \\ Q iff P ; R <= Q
+*)
 
-Definition rd := 
-fun A (R R' : relation A) x y => exists z, R y z /\ R' x z.
+Definition div_l := fun A (P Q : relation A) => P ⨾  (Q ⁻¹).
+Definition div_r := fun A (P Q : relation A) => (P⁻¹) ⨾  Q .
 
+Notation "P // Q" := (div_l P Q) (at level 44).
+Notation "P \\ Q" := (div_r P Q) (at level 44).
  
 Canonical Structure kleene_algebra A: monoid.ops := {|
   ob := relation A;
@@ -41,8 +46,8 @@ Canonical Structure kleene_algebra A: monoid.ops := {|
   itr n := @clos_trans _;
   str n := @clos_refl_trans _;
   cnv n m := @transp _;
-  ldv n m p := @ld _;
-  rdv n m p := @rd _
+  ldv n m p := @div_l _;
+  rdv n m p := @div_r _
 |}.
 
 
@@ -97,13 +102,11 @@ Proof.
 Qed.
 
 
+Notation ra_nat_relation := (kleene_algebra_with_test nat).
 
-Notation ra_relation A := (kleene_algebra_with_test A).
-
-Lemma r_seq_in_r_trans_clos A x (r: ra_relation A x x): (r * r) <== r ^+.
+Lemma r_seq_in_r_trans_clos x (r: ra_nat_relation x x): (r * r) <== r ^+.
 Proof. 
 kat.
 Qed.
 
 
- 
