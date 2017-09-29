@@ -1,2 +1,0 @@
-ka_completeness.vo ka_completeness.glob ka_completeness.v.beautified: ka_completeness.v ./kleene.vo ./sums.vo ./matrix_ext.vo ./lset.vo ./boolean.vo ./lang.vo ./nfa.vo ./regex.vo ./bmx.vo ./rmx.vo ./normalisation.vo ./dfa.vo
-ka_completeness.vio: ka_completeness.v ./kleene.vio ./sums.vio ./matrix_ext.vio ./lset.vio ./boolean.vio ./lang.vio ./nfa.vio ./regex.vio ./bmx.vio ./rmx.vio ./normalisation.vio ./dfa.vio
