@@ -123,7 +123,7 @@ Ltac conv_term t k :=
   | ?a＊ =>  conv_loop a ltac:(fun a' => k uconstr:(a' ^*))
   | ?a⁻¹ =>  conv_loop a ltac:(fun a' => k constr:(a' `))
   | ?a ^? => conv_loop a ltac:(fun a' => k constr: (1 + a'))
-(*  | ⦗ ?a ⦘ => conv_loop a ltac:(fun a' => k constr:(@inj (kleene_algebra_with_test) a')) *)
+  | ⦗ ?a ⦘ => conv_loop a ltac:(fun a' => k constr:( [a']))
   | ?a ⊆ ?b => 
       conv_loop a ltac:(fun a' => conv_loop b ltac:(fun b' => k constr:(a' <== b')))
   | ?a ≡ ?b => 
@@ -138,13 +138,10 @@ Ltac conv_term t k :=
       conv_loop a ltac:(fun a' => conv_loop b ltac:(fun b' => k constr:(a' -o b')))
   | ?a \\ ?b => 
       conv_loop a ltac:(fun a' => conv_loop b ltac:(fun b' => k constr:(a' o- b')))
-(*   | ?a \ ?b =>  (* minus relation *)
-      conv_loop a ltac:(fun a' => conv_loop b ltac:(fun b' => k constr:(a' o- b'))) *)
-
-   |  pow_rel ?a O => k uconstr:(1)
-   |  pow_rel ?a (S ?n) =>
+  |  pow_rel ?a O => k uconstr:(1)
+  |  pow_rel ?a (S ?n) =>
         conv_loop (a ^^ n) ltac:(fun an' => conv_loop a ltac:(fun a' => k constr:(an' * a')))
-(*  | ?f ?a ?b => 
+  (*| ?f ?a ?b => 
       conv_loop a ltac:(fun a' => conv_loop b ltac:(fun b' => k constr:(f a' b'))) *)
   | _ => k t
   end in
@@ -158,14 +155,23 @@ Ltac conv :=
      conv_term a ltac:(fun b => change a with b)
   end.
 
-Ltac conv_all := 
-  change (relation) with (fun A => car (@mor (@kar (kleene_algebra_with_test A)) tt tt)) in *;
+Ltac conv_all :=
+  repeat match goal with 
+  | H: ?A -> Prop |- _ => progress (change (A -> Prop) with (car (@tst (kleene_algebra_with_test A) tt)) in H)
+  end;
+  change (relation) with (fun A => car (kleene_algebra_with_test A tt tt)) in *;
   repeat match goal with 
   | H: ?a |- _ => progress (conv_term a ltac:(fun b => change a with b in H))
   | |- ?a => progress (conv_term a ltac:(fun b => change a with b))
   end.
 
 Ltac kat_solve := ins; conv_all; kat.
+
+Lemma bla3 A (b: A -> Prop) (q: relation A): ⦗ b ⦘ ;; q == q;; ⦗ b⦘ -> ⦗ b⦘;;q＊ == ⦗ b⦘;;(q;;⦗ b⦘)＊.
+Proof.
+  ins.
+  conv_all.
+Admitted.
 
 
 (* Same examples *)
@@ -199,6 +205,9 @@ Lemma bla2 A (x y: relation A):  x ;; y == x ;; y ;; x ->
 Proof.
   kat_solve.
 Qed.
+
+
+
 
 
 
