@@ -2,6 +2,9 @@ Require Import Hahn.
 From RelationAlgebra Require Import kat normalisation rewriting kat_tac rel.
 Set Implicit Arguments.
 
+
+(* Definition an algebra *)
+
 (* kat consists of a boolean algebra and a kleene algebra *)
 Canonical Structure bool_algebra (A: Type): lattice.ops := {|
   car := (A -> Prop);
@@ -66,7 +69,8 @@ Local Ltac u :=
          reflexive, transitive in *;
   ins; try solve [tauto | firstorder].
 
-(* Proving laws of kat holds *)
+
+(* Proving laws of the algebra holds *)
 
 (* Boolean algebra is a lattice *)
 Instance expr_lattice_laws A: lattice.laws BL (bool_algebra A).
@@ -113,6 +117,8 @@ Proof.
     * unfold eqv_rel; red; ins; split; red in H; desf.
 Qed.
 
+
+(*-------------------------------------------------------------------------------------------*)
 
 (* Tactics for converting a Hahn query into a ra library query *)
 Ltac conv_term t k := 
@@ -167,45 +173,28 @@ Ltac conv_all :=
 
 Ltac kat_solve := ins; conv_all; kat.
 
-Lemma bla3 A (b: A -> Prop) (q: relation A): ⦗ b ⦘ ;; q == q;; ⦗ b⦘ -> ⦗ b⦘;;q＊ == ⦗ b⦘;;(q;;⦗ b⦘)＊.
-Proof.
-  ins.
-  conv_all.
-Admitted.
 
-
-(* Same examples *)
-
+(* Same test examples *)
 Lemma r_trans_comm A (r: relation A): (r⁺ ;; r) ≡ r ;; r⁺.
-Proof.
-  conv. ka.
-Qed.
+Proof. kat_solve. Qed.
 
 Lemma r_seq_trans_clos A (r: relation A): (r ;; r) ⊆ r⁺.
-Proof.
-  conv. ka.
-Qed.
+Proof. kat_solve. Qed.
 
-
-
-Lemma bla A (r: relation A): r^? ⊆ r＊.
-Proof.
-  kat_solve.
-Qed.
+Lemma bla0 A (r: relation A): r^? ⊆ r＊.
+Proof. kat_solve. Qed.
 
 
 Lemma bla1 A (x y: relation A):  x ;; y == x ;; y ;; x -> x ⊆ x ;; (y ;; x)＊.
-Proof.
-  kat_solve.
-Qed.
+Proof. kat_solve. Qed.
 
 
 Lemma bla2 A (x y: relation A):  x ;; y == x ;; y ;; x -> 
     (x ;; y)＊ ;; (x ;; y ;; x) ⊆ (x ;; y)＊ ;; x.
-Proof.
-  kat_solve.
-Qed.
+Proof. kat_solve. Qed.
 
+Lemma bla3 A (b: A -> Prop) (q: relation A): ⦗ b ⦘ ;; ⦗ b⦘ ⊆ ⦗ b⦘⁺.
+Proof. kat_solve. Qed.
 
 
 
