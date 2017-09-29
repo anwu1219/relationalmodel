@@ -12,7 +12,7 @@
    cf. "Kleene algebra with tests and program schematology", A. Angus and D. Kozen, 2001
 *)
 
-From RelationAlgebra Require Import kat normalisation rewriting move kat_tac comparisons rel.
+Require Import kat normalisation rewriting move kat_tac comparisons rel.
 Set Implicit Arguments.
 
 Unset Injection On Proofs.
