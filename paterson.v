@@ -362,7 +362,7 @@ Arguments prog_monoid_ops : simpl never.
 Arguments prog_lattice_ops : simpl never.
 Arguments prog_kat_ops : simpl never.
 
-Lemma gc_correct y p: dont_read y p -> gc y p; del y == p; del y.
+Lemma gc_correct y p: dont_read y p -> gc y p; del y == p; del y. 
 Proof.
   intro H. transitivity (del y; gc y p).
   induction p; cbn. 

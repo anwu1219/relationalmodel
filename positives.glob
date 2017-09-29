@@ -1,0 +1,135 @@
+DIGEST 7e9b5ca7167051740a4b239c9cc95a25
+FRelationAlgebra.positives
+R569:575 Coq.Numbers.BinNums <> <> lib
+R593:603 RelationAlgebra.comparisons <> <> lib
+def 649:655 <> eqb_pos
+R675:675 RelationAlgebra.positives <> j var
+R673:673 RelationAlgebra.positives <> i var
+R689:690 Coq.Numbers.BinNums <> xH constr
+R692:693 Coq.Numbers.BinNums <> xH constr
+R698:701 Coq.Init.Datatypes <> true constr
+R709:710 Coq.Numbers.BinNums <> xI constr
+R714:715 Coq.Numbers.BinNums <> xI constr
+R721:722 Coq.Numbers.BinNums <> xO constr
+R727:728 Coq.Numbers.BinNums <> xO constr
+R735:741 RelationAlgebra.positives <> eqb_pos def
+R745:745 RelationAlgebra.positives <> j var
+R743:743 RelationAlgebra.positives <> i var
+R735:741 RelationAlgebra.positives <> eqb_pos def
+R745:745 RelationAlgebra.positives <> j var
+R743:743 RelationAlgebra.positives <> i var
+R760:764 Coq.Init.Datatypes <> false constr
+prf 780:791 <> eqb_pos_spec
+R806:812 RelationAlgebra.comparisons <> reflect ind
+R821:827 RelationAlgebra.positives <> eqb_pos def
+R831:831 RelationAlgebra.positives <> j var
+R829:829 RelationAlgebra.positives <> i var
+R816:816 Coq.Init.Logic <> :type_scope:x_'='_x not
+R815:815 RelationAlgebra.positives <> i var
+R817:817 RelationAlgebra.positives <> j var
+def 933:943 <> pos_compare
+R963:963 RelationAlgebra.positives <> j var
+R961:961 RelationAlgebra.positives <> i var
+R976:977 Coq.Numbers.BinNums <> xH constr
+R980:981 Coq.Numbers.BinNums <> xH constr
+R986:987 Coq.Init.Datatypes <> Eq constr
+R995:996 Coq.Numbers.BinNums <> xO constr
+R1001:1002 Coq.Numbers.BinNums <> xO constr
+R1008:1009 Coq.Numbers.BinNums <> xI constr
+R1014:1015 Coq.Numbers.BinNums <> xI constr
+R1022:1032 RelationAlgebra.positives <> pos_compare def
+R1036:1036 RelationAlgebra.positives <> j var
+R1034:1034 RelationAlgebra.positives <> i var
+R1022:1032 RelationAlgebra.positives <> pos_compare def
+R1036:1036 RelationAlgebra.positives <> j var
+R1034:1034 RelationAlgebra.positives <> i var
+R1044:1045 Coq.Numbers.BinNums <> xH constr
+R1053:1054 Coq.Init.Datatypes <> Lt constr
+R1065:1066 Coq.Numbers.BinNums <> xH constr
+R1071:1072 Coq.Init.Datatypes <> Gt constr
+R1080:1081 Coq.Numbers.BinNums <> xO constr
+R1091:1092 Coq.Init.Datatypes <> Lt constr
+R1108:1109 Coq.Init.Datatypes <> Gt constr
+prf 1126:1141 <> pos_compare_spec
+R1156:1167 RelationAlgebra.comparisons <> compare_spec ind
+R1176:1186 RelationAlgebra.positives <> pos_compare def
+R1190:1190 RelationAlgebra.positives <> j var
+R1188:1188 RelationAlgebra.positives <> i var
+R1171:1171 Coq.Init.Logic <> :type_scope:x_'='_x not
+R1170:1170 RelationAlgebra.positives <> i var
+R1172:1172 RelationAlgebra.positives <> j var
+def 0:-1 <> cmp_pos
+R1313:1318 RelationAlgebra.comparisons <> mk_cmp constr
+R1337:1352 RelationAlgebra.positives <> pos_compare_spec thm
+R1322:1333 RelationAlgebra.positives <> eqb_pos_spec thm
+sec 1586:1586 <> e
+var 1598:1598 e A
+ind 1617:1621 <> sigma
+constr 1626:1636 <> sigma_empty
+constr 1640:1640 <> N
+R1637:1637 RelationAlgebra.positives <> sigma ind
+R1645:1649 RelationAlgebra.positives <> sigma ind
+R1655:1660 Coq.Init.Datatypes <> option ind
+R1662:1662 RelationAlgebra.positives <> e.A var
+R1668:1672 RelationAlgebra.positives <> sigma ind
+R1674:1674 RelationAlgebra.positives <> sigma ind
+def 1685:1693 <> sigma_get
+R1718:1718 RelationAlgebra.positives <> m var
+R1732:1732 RelationAlgebra.positives <> N constr
+R1756:1756 RelationAlgebra.positives <> i var
+R1773:1774 Coq.Numbers.BinNums <> xH constr
+R1792:1795 Coq.Init.Datatypes <> None constr
+R1800:1806 RelationAlgebra.positives <> default var
+R1810:1813 Coq.Init.Datatypes <> Some constr
+R1836:1837 Coq.Numbers.BinNums <> xO constr
+R1844:1852 RelationAlgebra.positives <> sigma_get def
+R1864:1864 RelationAlgebra.positives <> i var
+R1854:1860 RelationAlgebra.positives <> default var
+R1876:1877 Coq.Numbers.BinNums <> xI constr
+R1884:1892 RelationAlgebra.positives <> sigma_get def
+R1904:1904 RelationAlgebra.positives <> i var
+R1894:1900 RelationAlgebra.positives <> default var
+R1927:1933 RelationAlgebra.positives <> default var
+def 1951:1959 <> sigma_add
+R1980:1980 RelationAlgebra.positives <> m var
+R1993:2003 RelationAlgebra.positives <> sigma_empty constr
+R2022:2022 RelationAlgebra.positives <> i var
+R2039:2040 Coq.Numbers.BinNums <> xH constr
+R2045:2045 RelationAlgebra.positives <> N constr
+R2068:2078 RelationAlgebra.positives <> sigma_empty constr
+R2060:2063 Coq.Init.Datatypes <> Some constr
+R2065:2065 RelationAlgebra.positives <> v var
+R2047:2057 RelationAlgebra.positives <> sigma_empty constr
+R2090:2091 Coq.Numbers.BinNums <> xO constr
+R2098:2098 RelationAlgebra.positives <> N constr
+R2133:2143 RelationAlgebra.positives <> sigma_empty constr
+R2128:2131 Coq.Init.Datatypes <> None constr
+R2101:2109 RelationAlgebra.positives <> sigma_add def
+R2115:2125 RelationAlgebra.positives <> sigma_empty constr
+R2113:2113 RelationAlgebra.positives <> v var
+R2111:2111 RelationAlgebra.positives <> i var
+R2155:2156 Coq.Numbers.BinNums <> xI constr
+R2163:2163 RelationAlgebra.positives <> N constr
+R2183:2191 RelationAlgebra.positives <> sigma_add def
+R2197:2207 RelationAlgebra.positives <> sigma_empty constr
+R2195:2195 RelationAlgebra.positives <> v var
+R2193:2193 RelationAlgebra.positives <> i var
+R2177:2180 Coq.Init.Datatypes <> None constr
+R2165:2175 RelationAlgebra.positives <> sigma_empty constr
+R2228:2228 RelationAlgebra.positives <> N constr
+R2253:2253 RelationAlgebra.positives <> i var
+R2270:2271 Coq.Numbers.BinNums <> xH constr
+R2276:2276 RelationAlgebra.positives <> N constr
+R2281:2284 Coq.Init.Datatypes <> Some constr
+R2286:2286 RelationAlgebra.positives <> v var
+R2301:2302 Coq.Numbers.BinNums <> xO constr
+R2309:2309 RelationAlgebra.positives <> N constr
+R2312:2320 RelationAlgebra.positives <> sigma_add def
+R2324:2324 RelationAlgebra.positives <> v var
+R2322:2322 RelationAlgebra.positives <> i var
+R2343:2344 Coq.Numbers.BinNums <> xI constr
+R2351:2351 RelationAlgebra.positives <> N constr
+R2358:2366 RelationAlgebra.positives <> sigma_add def
+R2370:2370 RelationAlgebra.positives <> v var
+R2368:2368 RelationAlgebra.positives <> i var
+R2400:2400 RelationAlgebra.positives e <> sec
