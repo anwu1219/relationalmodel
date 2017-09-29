@@ -3,7 +3,7 @@ From RelationAlgebra Require Import kat normalisation rewriting kat_tac rel.
 Set Implicit Arguments.
 
 
-(* Definition an algebra *)
+(* Definition of a relational model of the kleene algebra with test *)
 
 (* kat consists of a boolean algebra and a kleene algebra *)
 Canonical Structure bool_algebra (A: Type): lattice.ops := {|
